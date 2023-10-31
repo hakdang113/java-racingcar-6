@@ -127,6 +127,7 @@ jun : -----
   #### `RegistCarInfo`
     - registCarName() : 사용자로부터 입력받은 자동차 이름들을 List 형식으로 반환한다.
     - registTryCount() : 사용자로부터 입력받은 시도횟수를 정수형으로 반환한다.
+    - isNameRight() : 사용자로부터 입력받은 자동차 이름이 5글자를 넘어갈 경우 `IllegalArgumentException` 에러를 발생시킨다.
 
   #### `RacingResult`
     - racingGame() : `RegistCarInfo`로 부터 받은 자동차 이름과 시도횟수를 통해 자동차 경주결과를 출력하는 메서드이다.
