@@ -113,6 +113,7 @@ jun : -----
  
 
 ---
+
 ## 기능 구현 목록
 ### `main()`
   - 프로그램 실행의 시작점은 `Application`의 `main()`으로 한다.
@@ -130,8 +131,18 @@ jun : -----
     - isNameRight() : 사용자로부터 입력받은 자동차 이름이 5글자를 넘어갈 경우 `IllegalArgumentException` 에러를 발생시킨다.
 
   #### `RacingResult`
-    - racingGame() : `RegistCarInfo`로 부터 받은 자동차 이름과 시도횟수를 통해 자동차 경주결과를 출력하는 메서드이다.
+    - racingGame() : 
+            - `RegistCarInfo`로 부터 받은 자동차 이름과 시도횟수를 통해 자동차 경주결과를 출력하는 메서드이다.
+            - checkFinalWinner() 로 부터 최종 우승자를 출력한다.
     - isCarGoOrStop() : 0 ~ 9까지 난수를 생성하여 4 이상일 경우 자동차 전진 "-", 4 미만인 경우 자동차 멈춤 "" 을 반환한다.
     - printRacingStepResult() : 중간 실행 결과를 출력한다.
     - checkFinalWinner() : 전진("-")을 가장 많이한 자동차를 찾아, 중복을 확인하고 최종 우승자를 리스트로 반환한다.
+
+---
+
+## Tech Stack
+
+### 언어 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JAVA(JDK 17)
+
+### IDE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intellij 2022.3.2    
 
