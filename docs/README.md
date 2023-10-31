@@ -121,11 +121,16 @@ jun : -----
 
 ### 클래스
   #### `RacingCarService`
-    - `playRacing()` : `main()`에서 실행할 자동차 경주 메서드이다.
-      - 사용자로부터 자동차 이름을 입력받아 registCarName() 메서드로 넘긴다.
-      - 경주 완료 후 결과를 반환한다.
+    - playRacing()
+        -`main()`에서 실행할 자동차 경주 메서드이다.
+        - 사용자로부터 자동차 이름을 입력받아 `registCarName()` 메서드로 넘긴다.
+        - 경주 완료 후 결과를 반환한다.
     
   #### `RegistCarInfo`
-    - `registCarName()` : 사용자로부터 입력받은 자동차 이름들을 List 형식으로 반환한다.
+    - registCarName() : 사용자로부터 입력받은 자동차 이름들을 List 형식으로 반환한다.
+    - registTryCount() : 사용자로부터 입력받은 시도횟수를 정수형으로 반환한다.
 
+  #### `RacingResult`
+    - racingGame() : `RegistCarInfo`로 부터 받은 자동차 이름과 시도횟수를 통해 자동차 경주결과를 반환하는 메서드이다.
+    - isCarGoOrStop() : 0 ~ 9까지 난수를 생성하여 4 이상일 경우 자동차 전진, 4 미만인 경우 자동차 멈춤, 그 외의 경우 에러를 발생시킨다.
 
